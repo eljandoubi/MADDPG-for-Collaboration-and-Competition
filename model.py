@@ -78,7 +78,7 @@ class ActorD(nn.Module):
         x = F.relu(self.fc1(state))
         x = F.relu(self.fc2(x))
         x = self.fc3(x)
-        return self.act(x).argmax(dim=-1,keepdim=True)
+        return self.act(x)
 
 
 
